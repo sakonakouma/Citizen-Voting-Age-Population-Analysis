@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ohio Voting analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-option">
+            <a class="nav-link" href="#" style="color:rgb(255, 255, 255); font-size:25px; text-align:center;float: right;margin: 10px 15px 10px 5px;
+            padding: 0 20px 0 0;">OHIO</a>
+          </li>
+
+          <li class="nav-option">
+            <a class="nav-link" href="#" style="color:rgb(255, 255, 255); font-size:25px; text-align:center;float: right;margin: 10px 15px 10px 5px;
+            padding: 0 20px 0 0;">Age</a>
+          </li>
+
+          <li class="nav-option">
+            <a class="nav-link" href="#" style="color:rgb(255, 255, 255); font-size:25px; text-align:center;float: right;margin: 10px 15px 10px 5px;
+            padding: 0 20px 0 0;">Sex </a>
+          </li>
+          <li class="nav-option">
+            <a class="nav-link" href="#" style="color:rgb(255, 255, 255); font-size:25px; text-align:center;float: right;margin: 10px 15px 10px 5px;
+            padding: 0 20px 0 0;">Poverty</a>
+          </li>
+          <li class="nav-option">
+            <a class="nav-link" href="#" style="color:rgb(255, 255, 255); font-size:25px; text-align:center;float: right;margin: 10px 15px 10px 5px;
+            padding: 0 20px 0 0;">Academic</a>
+          </li>
+          <li class="nav-option">
+            <a class="nav-link" href="#" style="color:rgb(255, 255, 255); font-size:25px; text-align:center;float: right;margin: 10px 15px 10px 5px;
+            padding: 0 20px 0 0;">Geographical_Distribution</a>
+          </li>
+
+
+
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="hero text-center">
+      <h1>Ohio Voting analysis</h1>
+      <p>Surveys of the voting situation-Based on 16 Congressional districts in Ohio</p>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Collaborators</div>
+              <div class="panel-body">
+                <form>
+                  <ul>
+                    <li>Marcum Nicole</li>
+                    <li>Wen Shon</li>
+                    <li>Nakouma Sako</li>
+                  </ul>
+
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="col-md-10">
+          <div class="blockitem">
+            <h1>Project summary</h1>
+            
+            <p>The project goal is to analyze the Citizen voting characteristics such as age, sex and poverty,
+              educational attainment, race, hispanic origin by congressional district. </p>
+
+            <p>The data was collected from the US Census Bureau. 5 csv tables showing the number of votes cast for
+              congressional representative for the November 2018 were downloaded. Moreover, the tables also show citizen
+              voting age, sex, education, race population estimates by states and age range.</p>
+
+          </div>
+          <div class="blockitem">
+            <h1>System Requirements</h1>
+            <p>- Python environment running Python 3.7 with the following installations:</p>
+            <ul>
+              <li>beautifulsoup4</li>
+              <li>numpy</li>
+              <li>pandas</li>
+              <li>requests</li>
+              <li>splinter</li>
+              <li>GeoJson and Leaflet</li>
+              <li>Matplotlib</li>
+              <li>SQL and SQL Alchemie</li>
+              <li>HTML and CSS</li>
+              <li>D3</li>
+              <li>Chrome Web Browser</li>
+              <li>ERD</li>
+              <li>still investigating a JavaScript library to incorporate in our app</li>
+
+            </ul>
+ 
+          </div>
+          <div class="blockitem">
+            <h1>Data Sources</h1>
+            <p>Our goal is to explore the relationship between different voting areas and different dimensions like age, sex and education.</p>
+            <p>To reach our goal, we got the data from
+              <a href="https://www.census.gov/data/tables/time-series/demo/voting-and-registration/congressional-voting-tables.html. ">census.gov</a> </p>
+            
+            <p>The second part of our data is the Geojson file, we are going to get it’s property from the data we got. (Lack of geojson files now.)</p>
+
+          </div>
+          <div class="blockitem">
+            <h1>Methodology</h1>
+            <ul>
+              <li>Methode 1 :  jupyter notebooks</li>
+              <li>Method 2 : SQL</li>
+              <li>Method 3 : D3</li>
+              <li>Method 4 : GeoJson</li>
+              <li>Method 5 : Web Visualisation</li>
+            </ul>
+          </div>
+          <div class="blockitem">
+            <h1>Results</h1>
+            <p>Interactive graphs where users can select the different demographics to compare Ohio voters</p>
+            <p>Examine the relationships of the different demographics of Ohio voters</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script>
+
+</body>
+
+</html>
