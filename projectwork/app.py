@@ -28,6 +28,10 @@ def gallery():
 def economy():
     return render_template("economy.html")
 
+@app.route("/age")
+def age():
+    return render_template("age_nico.html")
+
 
 
 
